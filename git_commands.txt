@@ -1,0 +1,13 @@
+Initialise: git init
+Track file: git add <filename> 
+Untrack file: git restore --staged <filename>
+status: git status
+Commit: git commit -m "message"
+Commit History: git log
+revert commit: git reset <hashID of the inital commit>
+stash changes: git stash
+unstash changes: git stash pop
+clear stashed changes: git stash clear
+
+connect remote repo: git remote add origin <url>
+
