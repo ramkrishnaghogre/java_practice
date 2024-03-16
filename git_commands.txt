@@ -10,4 +10,14 @@ unstash changes: git stash pop
 clear stashed changes: git stash clear
 
 connect remote repo: git remote add origin <url>
-
+push to remote repo: git push origin <branch_name>
+create branch: git branch <branch_name>
+move head to the branch: git checkout <branch_name>
+merge branch to current: git merge <branch_name>
+connect to original repo of forked url: git remote add upstream <url>
+Note: Create separate branch for each pull request as multiple commints on same branch are added in same pull request
+force push to remote repo: git push origin <branch_name> -f
+fetch all commits from remote repo and original repo: git fetch -all -prune
+move head to main branch of original repo: git reset --hard upstream/main
+fetch all commits, move head to new main branch: git pull upstream main
+to merge multiple commits into single commit: git rebase -i <hash_id> #Now you may update the commit as s(squach) or pick.
